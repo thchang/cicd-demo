@@ -1,9 +1,7 @@
 #!/bin/bash
 
-## Check style
-#flake8 ../src/*.py
-
-cd .. && export PYTHONPATH=$PYTHONPATH:`pwd` && cd test
+# Check style
+flake8 ../src/*.py
 
 # Run tests
 pytest -v --cov=../src --cov-report= . -W error::UserWarning
