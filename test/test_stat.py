@@ -3,8 +3,8 @@ def test_os_path_exists():
 
     import os
 
-    fp = open("test_file.txt", "w")
+    fp = open("test file.txt", "w")
     fp.write("Testing 123...")
     fp.close()
 
-    assert(os.path.exists("test_file.txt"))
+    assert(os.path.exists("test file.txt"))
